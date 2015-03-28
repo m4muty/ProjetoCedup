@@ -1,0 +1,190 @@
+object F_CADASTRO_PESSOA: TF_CADASTRO_PESSOA
+  Left = 84
+  Top = 178
+  Width = 754
+  Height = 546
+  Caption = 'F_CADASTRO_PESSOA'
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object PageControl1: TPageControl
+    Left = 0
+    Top = 0
+    Width = 746
+    Height = 515
+    ActivePage = TabSheet1
+    Align = alClient
+    TabOrder = 0
+    object TabSheet1: TTabSheet
+      Caption = 'Novo Cadastro'
+      object Label1: TLabel
+        Left = 16
+        Top = 16
+        Width = 96
+        Height = 13
+        Caption = 'nome_pessoa_fisica'
+        FocusControl = DBEdit1
+      end
+      object Label2: TLabel
+        Left = 420
+        Top = 56
+        Width = 85
+        Height = 13
+        Caption = 'cpf_pessoa_fisica'
+        FocusControl = DBEdit2
+      end
+      object Label3: TLabel
+        Left = 592
+        Top = 136
+        Width = 92
+        Height = 13
+        Caption = 'sexo_pessoa_fisica'
+        FocusControl = DBEdit3
+      end
+      object Label4: TLabel
+        Left = 556
+        Top = 56
+        Width = 79
+        Height = 13
+        Caption = 'rg_pessoa_fisica'
+        FocusControl = DBEdit4
+      end
+      object Label5: TLabel
+        Left = 420
+        Top = 16
+        Width = 104
+        Height = 13
+        Caption = 'apelido_pessoa_fisica'
+        FocusControl = DBEdit5
+      end
+      object Label6: TLabel
+        Left = 80
+        Top = 288
+        Width = 93
+        Height = 13
+        Caption = 'peso_pessoa_fisica'
+        FocusControl = DBEdit6
+      end
+      object Label7: TLabel
+        Left = 80
+        Top = 328
+        Width = 96
+        Height = 13
+        Caption = 'altura_pessoa_fisica'
+        FocusControl = DBEdit7
+      end
+      object Label8: TLabel
+        Left = 16
+        Top = 89
+        Width = 112
+        Height = 16
+        Caption = 'profissao_pessoa_fisica'
+        FocusControl = DBEdit8
+      end
+      object Label9: TLabel
+        Left = 336
+        Top = 376
+        Width = 151
+        Height = 13
+        Caption = 'data_nascimento_pessoa_fisica'
+        FocusControl = DBEdit9
+      end
+      object DBEdit1: TDBEdit
+        Left = 16
+        Top = 32
+        Width = 394
+        Height = 21
+        DataField = 'nome_pessoa_fisica'
+        DataSource = DSpessoa
+        TabOrder = 0
+      end
+      object DBEdit2: TDBEdit
+        Left = 420
+        Top = 72
+        Width = 134
+        Height = 21
+        DataField = 'cpf_pessoa_fisica'
+        DataSource = DSpessoa
+        TabOrder = 1
+      end
+      object DBEdit3: TDBEdit
+        Left = 592
+        Top = 152
+        Width = 17
+        Height = 21
+        DataField = 'sexo_pessoa_fisica'
+        DataSource = DSpessoa
+        TabOrder = 2
+      end
+      object DBEdit4: TDBEdit
+        Left = 556
+        Top = 72
+        Width = 144
+        Height = 21
+        DataField = 'rg_pessoa_fisica'
+        DataSource = DSpessoa
+        TabOrder = 3
+      end
+      object DBEdit5: TDBEdit
+        Left = 420
+        Top = 32
+        Width = 271
+        Height = 21
+        DataField = 'apelido_pessoa_fisica'
+        DataSource = DSpessoa
+        TabOrder = 4
+      end
+      object DBEdit6: TDBEdit
+        Left = 80
+        Top = 304
+        Width = 134
+        Height = 21
+        DataField = 'peso_pessoa_fisica'
+        DataSource = DSpessoa
+        TabOrder = 5
+      end
+      object DBEdit7: TDBEdit
+        Left = 80
+        Top = 344
+        Width = 134
+        Height = 21
+        DataField = 'altura_pessoa_fisica'
+        DataSource = DSpessoa
+        TabOrder = 6
+      end
+      object DBEdit8: TDBEdit
+        Left = 16
+        Top = 105
+        Width = 394
+        Height = 24
+        DataField = 'profissao_pessoa_fisica'
+        DataSource = DSpessoa
+        TabOrder = 7
+      end
+      object DBEdit9: TDBEdit
+        Left = 336
+        Top = 392
+        Width = 134
+        Height = 21
+        DataField = 'data_nascimento_pessoa_fisica'
+        DataSource = DSpessoa
+        TabOrder = 8
+      end
+    end
+    object TabSheet2: TTabSheet
+      Caption = 'Endere'#231'o'
+      ImageIndex = 1
+    end
+  end
+  object DSpessoa: TDataSource
+    DataSet = DM.Tbl_pessoa_fisica
+    Left = 712
+    Top = 24
+  end
+end

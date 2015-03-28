@@ -1,0 +1,156 @@
+object DataModule1: TDataModule1
+  OldCreateOrder = False
+  Left = 336
+  Top = 240
+  Height = 361
+  Width = 435
+  object Conect_SQL: TADOConnection
+    Connected = True
+    ConnectionString = 
+      'Provider=MSDASQL.1;Persist Security Info=False;Data Source=cedup' +
+      '2015'
+    LoginPrompt = False
+    Left = 40
+    Top = 24
+  end
+  object Tbl_Alunos: TADOTable
+    Active = True
+    Connection = Conect_SQL
+    CursorType = ctStatic
+    TableName = 'alunos'
+    Left = 136
+    Top = 24
+    object Tbl_Alunoscodigo_aluno: TAutoIncField
+      FieldName = 'codigo_aluno'
+      ReadOnly = True
+    end
+    object Tbl_Alunoscodigo_pessoa_fisica: TIntegerField
+      FieldName = 'codigo_pessoa_fisica'
+    end
+    object Tbl_Alunosmatricula_aluno: TStringField
+      FieldName = 'matricula_aluno'
+      Size = 10
+    end
+    object Tbl_Alunosoutro_curso_aluno: TStringField
+      FieldName = 'outro_curso_aluno'
+      Size = 255
+    end
+    object Tbl_Alunoscomo_soube_aluno: TIntegerField
+      FieldName = 'como_soube_aluno'
+    end
+    object Tbl_Alunoscomo_soube_outros_aluno: TStringField
+      FieldName = 'como_soube_outros_aluno'
+      Size = 255
+    end
+    object Tbl_Alunosvestibular_aluno: TSmallintField
+      FieldName = 'vestibular_aluno'
+    end
+    object Tbl_Alunosdata_cadastro_aluno: TDateTimeField
+      FieldName = 'data_cadastro_aluno'
+    end
+  end
+  object Tbl_bancos: TADOTable
+    Active = True
+    Connection = Conect_SQL
+    CursorType = ctStatic
+    TableName = 'bancos'
+    Left = 32
+    Top = 96
+  end
+  object Tbl_Contas: TADOTable
+    Active = True
+    Connection = Conect_SQL
+    CursorType = ctStatic
+    TableName = 'contas'
+    Left = 104
+    Top = 96
+  end
+  object Tbl_boletim: TADOTable
+    Active = True
+    Connection = Conect_SQL
+    CursorType = ctStatic
+    TableName = 'boletim'
+    Left = 224
+    Top = 24
+  end
+  object Tbl_cidades: TADOTable
+    Active = True
+    Connection = Conect_SQL
+    CursorType = ctStatic
+    TableName = 'cidades'
+    Left = 200
+    Top = 104
+  end
+  object Tbl_cursos: TADOTable
+    Active = True
+    Connection = Conect_SQL
+    CursorType = ctStatic
+    TableName = 'cursos'
+    Left = 16
+    Top = 184
+  end
+  object Tbl_enderecos: TADOTable
+    Active = True
+    Connection = Conect_SQL
+    CursorType = ctStatic
+    TableName = 'enderecos'
+    Left = 104
+    Top = 184
+  end
+  object Tbl_estados: TADOTable
+    Active = True
+    Connection = Conect_SQL
+    CursorType = ctStatic
+    TableName = 'estados'
+    Left = 208
+    Top = 192
+  end
+  object Tbl_grade_hora: TADOTable
+    Active = True
+    Connection = Conect_SQL
+    CursorType = ctStatic
+    TableName = 'grade_hora'
+    Left = 32
+    Top = 248
+  end
+  object Tbl_materias: TADOTable
+    Active = True
+    Connection = Conect_SQL
+    CursorType = ctStatic
+    TableName = 'materias'
+    Left = 112
+    Top = 248
+  end
+  object Tbl_pessoa_fisica: TADOTable
+    Active = True
+    Connection = Conect_SQL
+    CursorType = ctStatic
+    TableName = 'pessoa_fisica'
+    Left = 208
+    Top = 248
+  end
+  object Tbl_professores: TADOTable
+    Active = True
+    Connection = Conect_SQL
+    CursorType = ctStatic
+    TableName = 'professores'
+    Left = 312
+    Top = 48
+  end
+  object Tbl_turmas: TADOTable
+    Active = True
+    Connection = Conect_SQL
+    CursorType = ctStatic
+    TableName = 'turmas'
+    Left = 336
+    Top = 128
+  end
+  object Tbl_turnos: TADOTable
+    Active = True
+    Connection = Conect_SQL
+    CursorType = ctStatic
+    TableName = 'turnos'
+    Left = 312
+    Top = 208
+  end
+end
