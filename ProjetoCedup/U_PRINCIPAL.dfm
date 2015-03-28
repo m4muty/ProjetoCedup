@@ -1,6 +1,6 @@
 object F_PRINCIPAL: TF_PRINCIPAL
-  Left = 756
-  Top = 316
+  Left = 237
+  Top = 117
   Width = 522
   Height = 346
   Caption = 'F_PRINCIPAL'

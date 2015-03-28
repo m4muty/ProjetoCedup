@@ -1,8 +1,8 @@
 object F_PRINCIPAL: TF_PRINCIPAL
-  Left = 237
-  Top = 117
-  Width = 522
-  Height = 346
+  Left = 288
+  Top = 173
+  Width = 928
+  Height = 480
   Caption = 'F_PRINCIPAL'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -15,8 +15,8 @@ object F_PRINCIPAL: TF_PRINCIPAL
   PixelsPerInch = 96
   TextHeight = 13
   object MainMenu1: TMainMenu
-    Left = 16
-    Top = 16
+    Left = 752
+    Top = 80
     object Desenv11: TMenuItem
       Caption = 'Desenv1'
     end

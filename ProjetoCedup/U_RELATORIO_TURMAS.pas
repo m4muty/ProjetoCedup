@@ -4,10 +4,12 @@ interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs;
+  Dialogs, Grids, DBGrids, StdCtrls;
 
 type
   TF_RELATORIO_TURMAS = class(TForm)
+    Label1: TLabel;
+    DBGrid1: TDBGrid;
   private
     { Private declarations }
   public
