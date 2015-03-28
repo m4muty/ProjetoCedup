@@ -1,9 +1,9 @@
-object Form8: TForm8
+object F_RELATORIO_GRADE: TF_RELATORIO_GRADE
   Left = 192
   Top = 117
   Width = 928
   Height = 480
-  Caption = 'Form8'
+  Caption = 'F_RELATORIO_GRADE'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText

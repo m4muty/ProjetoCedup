@@ -1,9 +1,9 @@
 object DM: TDM
   OldCreateOrder = False
-  Left = 452
-  Top = 205
-  Height = 361
-  Width = 435
+  Left = 392
+  Top = 133
+  Height = 446
+  Width = 609
   object Conect_SQL: TADOConnection
     Connected = True
     ConnectionString = 
@@ -14,7 +14,6 @@ object DM: TDM
     Top = 24
   end
   object Tbl_bancos: TADOTable
-    Active = True
     Connection = Conect_SQL
     CursorType = ctStatic
     TableName = 'bancos'
@@ -33,12 +32,11 @@ object DM: TDM
     end
   end
   object Tbl_Contas: TADOTable
-    Active = True
     Connection = Conect_SQL
     CursorType = ctStatic
     TableName = 'contas'
-    Left = 104
-    Top = 96
+    Left = 168
+    Top = 104
     object Tbl_Contascodigo_conta: TAutoIncField
       FieldName = 'codigo_conta'
       ReadOnly = True
@@ -59,12 +57,11 @@ object DM: TDM
     end
   end
   object Tbl_cidades: TADOTable
-    Active = True
     Connection = Conect_SQL
     CursorType = ctStatic
     TableName = 'cidades'
-    Left = 200
-    Top = 104
+    Left = 312
+    Top = 120
     object Tbl_cidadescodigo_cidade: TAutoIncField
       FieldName = 'codigo_cidade'
       ReadOnly = True
@@ -82,8 +79,8 @@ object DM: TDM
     Connection = Conect_SQL
     CursorType = ctStatic
     TableName = 'cursos'
-    Left = 16
-    Top = 184
+    Left = 40
+    Top = 176
     object Tbl_cursoscodigo_curso: TAutoIncField
       FieldName = 'codigo_curso'
       ReadOnly = True
@@ -98,8 +95,8 @@ object DM: TDM
     Connection = Conect_SQL
     CursorType = ctStatic
     TableName = 'enderecos'
-    Left = 104
-    Top = 184
+    Left = 168
+    Top = 192
     object Tbl_enderecoscodigo_endereco: TAutoIncField
       FieldName = 'codigo_endereco'
       ReadOnly = True
@@ -193,8 +190,8 @@ object DM: TDM
     Connection = Conect_SQL
     CursorType = ctStatic
     TableName = 'estados'
-    Left = 208
-    Top = 192
+    Left = 320
+    Top = 208
     object Tbl_estadoscodigo_estado: TAutoIncField
       FieldName = 'codigo_estado'
       ReadOnly = True
@@ -212,7 +209,7 @@ object DM: TDM
     Connection = Conect_SQL
     CursorType = ctStatic
     TableName = 'grade_hora'
-    Left = 32
+    Left = 56
     Top = 248
     object Tbl_grade_horacodigo_materia: TIntegerField
       FieldName = 'codigo_materia'
@@ -241,8 +238,8 @@ object DM: TDM
     Connection = Conect_SQL
     CursorType = ctStatic
     TableName = 'materias'
-    Left = 112
-    Top = 248
+    Left = 176
+    Top = 256
     object Tbl_materiascodigo_materia: TAutoIncField
       FieldName = 'codigo_materia'
       ReadOnly = True
@@ -264,8 +261,8 @@ object DM: TDM
     Connection = Conect_SQL
     CursorType = ctStatic
     TableName = 'pessoa_fisica'
-    Left = 208
-    Top = 248
+    Left = 320
+    Top = 264
     object Tbl_pessoa_fisicacodigo_pessoa_fisica: TAutoIncField
       FieldName = 'codigo_pessoa_fisica'
       ReadOnly = True
@@ -418,8 +415,8 @@ object DM: TDM
     Connection = Conect_SQL
     CursorType = ctStatic
     TableName = 'professores'
-    Left = 312
-    Top = 48
+    Left = 464
+    Top = 64
     object Tbl_professorescodigo_professor: TAutoIncField
       FieldName = 'codigo_professor'
       ReadOnly = True
@@ -439,8 +436,8 @@ object DM: TDM
     Connection = Conect_SQL
     CursorType = ctStatic
     TableName = 'turmas'
-    Left = 336
-    Top = 128
+    Left = 464
+    Top = 144
     object Tbl_turmascodigo_turma: TAutoIncField
       FieldName = 'codigo_turma'
       ReadOnly = True
@@ -461,8 +458,8 @@ object DM: TDM
     Connection = Conect_SQL
     CursorType = ctStatic
     TableName = 'turnos'
-    Left = 312
-    Top = 208
+    Left = 472
+    Top = 224
     object Tbl_turnoscodigo_turno: TAutoIncField
       FieldName = 'codigo_turno'
       ReadOnly = True
@@ -477,15 +474,15 @@ object DM: TDM
     Connection = Conect_SQL
     CursorType = ctStatic
     TableName = 'alunos'
-    Left = 112
-    Top = 32
+    Left = 176
+    Top = 40
   end
   object Tbl_boletim: TADOTable
     Active = True
     Connection = Conect_SQL
     CursorType = ctStatic
     TableName = 'boletim'
-    Left = 200
-    Top = 24
+    Left = 312
+    Top = 40
   end
 end

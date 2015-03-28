@@ -1,7 +1,7 @@
 object DM: TDM
   OldCreateOrder = False
-  Left = 392
-  Top = 133
+  Left = 244
+  Top = 148
   Height = 446
   Width = 609
   object Conect_SQL: TADOConnection

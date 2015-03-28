@@ -4,10 +4,14 @@ interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs;
+  Dialogs, StdCtrls;
 
 type
-  TForm3 = class(TForm)
+  TF_TURMAS = class(TForm)
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    Label4: TLabel;
   private
     { Private declarations }
   public
@@ -15,9 +19,11 @@ type
   end;
 
 var
-  Form3: TForm3;
+  F_TURMAS: TF_TURMAS;
 
 implementation
+
+uses U_DM;
 
 {$R *.dfm}
 

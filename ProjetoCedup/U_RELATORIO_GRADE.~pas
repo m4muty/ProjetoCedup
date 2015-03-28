@@ -7,7 +7,7 @@ uses
   Dialogs;
 
 type
-  TForm8 = class(TForm)
+  TF_RELATORIO_GRADE = class(TForm)
   private
     { Private declarations }
   public
@@ -15,7 +15,7 @@ type
   end;
 
 var
-  Form8: TForm8;
+  F_RELATORIO_GRADE: TF_RELATORIO_GRADE;
 
 implementation
 

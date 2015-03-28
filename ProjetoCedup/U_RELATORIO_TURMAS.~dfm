@@ -1,9 +1,9 @@
-object Form7: TForm7
+object F_RELATORIO_TURMAS: TF_RELATORIO_TURMAS
   Left = 192
   Top = 117
   Width = 928
   Height = 480
-  Caption = 'Form7'
+  Caption = 'F_RELATORIO_TURMAS'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText

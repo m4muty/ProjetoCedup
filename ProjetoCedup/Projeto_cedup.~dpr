@@ -11,7 +11,7 @@ uses
   U_CURSO in 'U_CURSO.pas' {F_CURSO},
   U_RELATORIO_TURMAS in 'U_RELATORIO_TURMAS.pas' {F_RELATORIO_TURMAS},
   U_RELATORIO_GRADE in 'U_RELATORIO_GRADE.pas' {F_RELATORIO_GRADE},
-  U_CADASTRO_PESSOA in 'U_CADASTRO_PESSOA.pas' {Form1};
+  U_CADASTRO_PESSOA in 'U_CADASTRO_PESSOA.pas' {F_CADASTRO_PESSOA};
 
 {$R *.res}
 
@@ -26,6 +26,6 @@ begin
   Application.CreateForm(TF_CURSO, F_CURSO);
   Application.CreateForm(TF_RELATORIO_TURMAS, F_RELATORIO_TURMAS);
   Application.CreateForm(TF_RELATORIO_GRADE, F_RELATORIO_GRADE);
-  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TF_CADASTRO_PESSOA, F_CADASTRO_PESSOA);
   Application.Run;
 end.
