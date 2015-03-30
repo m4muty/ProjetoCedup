@@ -1,5 +1,5 @@
 object F_PRINCIPAL: TF_PRINCIPAL
-  Left = 237
+  Left = 420
   Top = 117
   Width = 522
   Height = 346

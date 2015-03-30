@@ -1,7 +1,7 @@
 object F_RELATORIO_GRADE: TF_RELATORIO_GRADE
   Left = 337
   Top = 115
-  Width = 738
+  Width = 796
   Height = 577
   Caption = 'Relat'#243'rio de Grades Cadastradas'
   Color = clBtnFace
@@ -64,8 +64,8 @@ object F_RELATORIO_GRADE: TF_RELATORIO_GRADE
   object L_TURNO: TLabel
     Left = 192
     Top = 160
-    Width = 65
-    Height = 25
+    Width = 63
+    Height = 24
     Caption = 'Turno:'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
@@ -77,8 +77,8 @@ object F_RELATORIO_GRADE: TF_RELATORIO_GRADE
   object L_TURMA: TLabel
     Left = 192
     Top = 120
-    Width = 70
-    Height = 25
+    Width = 67
+    Height = 24
     Caption = 'Turma:'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
@@ -90,8 +90,8 @@ object F_RELATORIO_GRADE: TF_RELATORIO_GRADE
   object L_PROFESSOR: TLabel
     Left = 160
     Top = 80
-    Width = 100
-    Height = 25
+    Width = 95
+    Height = 24
     Caption = 'Professor:'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
@@ -177,7 +177,6 @@ object F_RELATORIO_GRADE: TF_RELATORIO_GRADE
     TabOrder = 8
   end
   object DataSource1: TDataSource
-    DataSet = DM.Tbl_grade_hora
     Left = 672
     Top = 8
   end

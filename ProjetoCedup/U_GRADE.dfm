@@ -1,8 +1,8 @@
 object F_GRADE: TF_GRADE
   Left = 226
   Top = 108
-  Width = 683
-  Height = 542
+  Width = 1048
+  Height = 580
   Caption = 'F_GRADE'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
