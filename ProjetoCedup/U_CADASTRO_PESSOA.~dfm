@@ -1,6 +1,6 @@
 object F_CADASTRO_PESSOA: TF_CADASTRO_PESSOA
-  Left = -1298
-  Top = -167
+  Left = 84
+  Top = 178
   Width = 754
   Height = 546
   Caption = 'F_CADASTRO_PESSOA'

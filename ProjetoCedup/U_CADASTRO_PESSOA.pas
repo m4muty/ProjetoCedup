@@ -13,7 +13,6 @@ type
     TabSheet2: TTabSheet;
     Label1: TLabel;
     DBEdit1: TDBEdit;
-    DSpessoa: TDataSource;
     Label2: TLabel;
     DBEdit2: TDBEdit;
     Label3: TLabel;

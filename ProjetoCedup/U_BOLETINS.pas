@@ -12,7 +12,6 @@ type
     DBEdit_NomeAluno: TDBEdit;
     DataSource1: TDataSource;
     Label2: TLabel;
-    DBEdit_NomeMateria: TDBEdit;
     Label3: TLabel;
     DBEdit_Media: TDBEdit;
     Label4: TLabel;
@@ -21,7 +20,6 @@ type
     DBEdit_Semestres: TDBEdit;
     Button1: TButton;
     DBComboBox1: TDBComboBox;
-    DBComboBox2: TDBComboBox;
     CheckBox1: TCheckBox;
     CheckBox2: TCheckBox;
     CheckBox3: TCheckBox;
@@ -31,6 +29,9 @@ type
     Label7: TLabel;
     DBListBox1: TDBListBox;
     Button2: TButton;
+    DBComboBox2: TDBComboBox;
+    DataSource2: TDataSource;
+    DBEdit1: TDBEdit;
   private
     { Private declarations }
   public

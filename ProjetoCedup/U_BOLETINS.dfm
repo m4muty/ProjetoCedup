@@ -1,6 +1,6 @@
 object F_BOLETINS: TF_BOLETINS
-  Left = 287
-  Top = 122
+  Left = 259
+  Top = 131
   Width = 928
   Height = 480
   Caption = 'F_BOLETINS'
@@ -33,7 +33,6 @@ object F_BOLETINS: TF_BOLETINS
     Width = 40
     Height = 13
     Caption = 'Materias'
-    FocusControl = DBEdit_NomeMateria
   end
   object Label3: TLabel
     Left = 256
@@ -80,22 +79,13 @@ object F_BOLETINS: TF_BOLETINS
     Caption = 'Materia'
   end
   object DBEdit_NomeAluno: TDBEdit
-    Left = 688
+    Left = 704
     Top = 80
     Width = 134
     Height = 21
     DataField = 'codigo_aluno'
     DataSource = DataSource1
     TabOrder = 0
-  end
-  object DBEdit_NomeMateria: TDBEdit
-    Left = 256
-    Top = 144
-    Width = 134
-    Height = 21
-    DataField = 'codigo_materia'
-    DataSource = DataSource1
-    TabOrder = 1
   end
   object DBEdit_Semestres: TDBEdit
     Left = 696
@@ -104,7 +94,7 @@ object F_BOLETINS: TF_BOLETINS
     Height = 21
     DataField = 'semestre_boletim'
     DataSource = DataSource1
-    TabOrder = 4
+    TabOrder = 3
   end
   object DBEdit_Media: TDBEdit
     Left = 256
@@ -113,7 +103,7 @@ object F_BOLETINS: TF_BOLETINS
     Height = 21
     DataField = 'media_boletim'
     DataSource = DataSource1
-    TabOrder = 2
+    TabOrder = 1
   end
   object DBEdit_Materias: TDBEdit
     Left = 472
@@ -122,7 +112,7 @@ object F_BOLETINS: TF_BOLETINS
     Height = 21
     DataField = 'faltas_boletim'
     DataSource = DataSource1
-    TabOrder = 3
+    TabOrder = 2
   end
   object Button1: TButton
     Left = 488
@@ -130,7 +120,7 @@ object F_BOLETINS: TF_BOLETINS
     Width = 113
     Height = 41
     Caption = 'Cadastrar'
-    TabOrder = 5
+    TabOrder = 4
   end
   object DBComboBox1: TDBComboBox
     Left = 256
@@ -140,17 +130,7 @@ object F_BOLETINS: TF_BOLETINS
     DataField = 'codigo_aluno'
     DataSource = DataSource1
     ItemHeight = 13
-    TabOrder = 6
-  end
-  object DBComboBox2: TDBComboBox
-    Left = 520
-    Top = 24
-    Width = 145
-    Height = 21
-    DataField = 'codigo_materia'
-    DataSource = DataSource1
-    ItemHeight = 13
-    TabOrder = 7
+    TabOrder = 5
   end
   object CheckBox1: TCheckBox
     Left = 472
@@ -158,7 +138,7 @@ object F_BOLETINS: TF_BOLETINS
     Width = 97
     Height = 17
     Caption = '1'#186' Semestre'
-    TabOrder = 8
+    TabOrder = 6
   end
   object CheckBox2: TCheckBox
     Left = 472
@@ -166,7 +146,7 @@ object F_BOLETINS: TF_BOLETINS
     Width = 97
     Height = 17
     Caption = '2'#186' Semestre'
-    TabOrder = 9
+    TabOrder = 7
   end
   object CheckBox3: TCheckBox
     Left = 576
@@ -174,7 +154,7 @@ object F_BOLETINS: TF_BOLETINS
     Width = 97
     Height = 17
     Caption = '3'#186' Semestre'
-    TabOrder = 10
+    TabOrder = 8
   end
   object CheckBox4: TCheckBox
     Left = 576
@@ -182,15 +162,16 @@ object F_BOLETINS: TF_BOLETINS
     Width = 97
     Height = 17
     Caption = '4'#186' Semestre'
-    TabOrder = 11
+    TabOrder = 9
   end
   object DBListBox1: TDBListBox
     Left = 40
     Top = 64
     Width = 121
     Height = 153
+    DataSource = DataSource2
     ItemHeight = 13
-    TabOrder = 12
+    TabOrder = 10
   end
   object Button2: TButton
     Left = 400
@@ -198,10 +179,34 @@ object F_BOLETINS: TF_BOLETINS
     Width = 33
     Height = 25
     Caption = '+'
+    TabOrder = 11
+  end
+  object DBComboBox2: TDBComboBox
+    Left = 520
+    Top = 24
+    Width = 145
+    Height = 21
+    DataField = 'descricao_materia'
+    DataSource = DataSource2
+    ItemHeight = 13
+    TabOrder = 12
+  end
+  object DBEdit1: TDBEdit
+    Left = 256
+    Top = 144
+    Width = 137
+    Height = 21
+    DataField = 'descricao_materia'
+    DataSource = DataSource2
     TabOrder = 13
   end
   object DataSource1: TDataSource
     DataSet = DM.Tbl_boletim
     Left = 8
+  end
+  object DataSource2: TDataSource
+    DataSet = DM.Tbl_materias
+    Left = 1144
+    Top = 24
   end
 end

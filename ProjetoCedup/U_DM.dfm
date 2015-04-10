@@ -1,7 +1,7 @@
 object DM: TDM
   OldCreateOrder = False
-  Left = 392
-  Top = 133
+  Left = 843
+  Top = 312
   Height = 446
   Width = 609
   object Conect_SQL: TADOConnection
@@ -14,6 +14,7 @@ object DM: TDM
     Top = 24
   end
   object Tbl_bancos: TADOTable
+    Active = True
     Connection = Conect_SQL
     CursorType = ctStatic
     TableName = 'bancos'
@@ -32,6 +33,7 @@ object DM: TDM
     end
   end
   object Tbl_Contas: TADOTable
+    Active = True
     Connection = Conect_SQL
     CursorType = ctStatic
     TableName = 'contas'
@@ -57,6 +59,7 @@ object DM: TDM
     end
   end
   object Tbl_cidades: TADOTable
+    Active = True
     Connection = Conect_SQL
     CursorType = ctStatic
     TableName = 'cidades'
@@ -206,6 +209,7 @@ object DM: TDM
     end
   end
   object Tbl_grade_hora: TADOTable
+    Active = True
     Connection = Conect_SQL
     CursorType = ctStatic
     TableName = 'grade_hora'
@@ -234,7 +238,6 @@ object DM: TDM
     end
   end
   object Tbl_materias: TADOTable
-    Active = True
     Connection = Conect_SQL
     CursorType = ctStatic
     TableName = 'materias'

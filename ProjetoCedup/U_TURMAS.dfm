@@ -1,6 +1,6 @@
 object F_TURMAS: TF_TURMAS
-  Left = 256
-  Top = 166
+  Left = 571
+  Top = 159
   Width = 577
   Height = 376
   Caption = 'Turmas'
@@ -16,8 +16,8 @@ object F_TURMAS: TF_TURMAS
   object L_CADASTRO_TURMAS: TLabel
     Left = 192
     Top = 24
-    Width = 162
-    Height = 25
+    Width = 189
+    Height = 24
     Caption = 'Cadastro de Turmas'
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
@@ -29,8 +29,8 @@ object F_TURMAS: TF_TURMAS
   object L_TURMAS: TLabel
     Left = 160
     Top = 96
-    Width = 45
-    Height = 23
+    Width = 53
+    Height = 22
     Caption = 'Turma'
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
@@ -42,8 +42,8 @@ object F_TURMAS: TF_TURMAS
   object L_CURSO: TLabel
     Left = 160
     Top = 128
-    Width = 42
-    Height = 23
+    Width = 51
+    Height = 22
     Caption = 'Curso'
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
@@ -55,8 +55,8 @@ object F_TURMAS: TF_TURMAS
   object L_TURNO: TLabel
     Left = 160
     Top = 160
-    Width = 41
-    Height = 23
+    Width = 48
+    Height = 22
     Caption = 'Turno'
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
@@ -106,7 +106,7 @@ object F_TURMAS: TF_TURMAS
     Left = 232
     Top = 96
     Width = 153
-    Height = 28
+    Height = 25
     DataField = 'descricao_turma'
     DataSource = D_DATASOURCE_TURMAS
     Font.Charset = ANSI_CHARSET

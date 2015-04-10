@@ -1,6 +1,6 @@
 object F_CADASTRO_PESSOA: TF_CADASTRO_PESSOA
-  Left = 84
-  Top = 178
+  Left = 600
+  Top = 135
   Width = 754
   Height = 546
   Caption = 'F_CADASTRO_PESSOA'
@@ -83,7 +83,7 @@ object F_CADASTRO_PESSOA: TF_CADASTRO_PESSOA
         Left = 16
         Top = 89
         Width = 112
-        Height = 16
+        Height = 13
         Caption = 'profissao_pessoa_fisica'
         FocusControl = DBEdit8
       end
@@ -101,7 +101,6 @@ object F_CADASTRO_PESSOA: TF_CADASTRO_PESSOA
         Width = 394
         Height = 21
         DataField = 'nome_pessoa_fisica'
-        DataSource = DSpessoa
         TabOrder = 0
       end
       object DBEdit2: TDBEdit
@@ -110,7 +109,6 @@ object F_CADASTRO_PESSOA: TF_CADASTRO_PESSOA
         Width = 134
         Height = 21
         DataField = 'cpf_pessoa_fisica'
-        DataSource = DSpessoa
         TabOrder = 1
       end
       object DBEdit3: TDBEdit
@@ -119,7 +117,6 @@ object F_CADASTRO_PESSOA: TF_CADASTRO_PESSOA
         Width = 17
         Height = 21
         DataField = 'sexo_pessoa_fisica'
-        DataSource = DSpessoa
         TabOrder = 2
       end
       object DBEdit4: TDBEdit
@@ -128,7 +125,6 @@ object F_CADASTRO_PESSOA: TF_CADASTRO_PESSOA
         Width = 144
         Height = 21
         DataField = 'rg_pessoa_fisica'
-        DataSource = DSpessoa
         TabOrder = 3
       end
       object DBEdit5: TDBEdit
@@ -137,7 +133,6 @@ object F_CADASTRO_PESSOA: TF_CADASTRO_PESSOA
         Width = 271
         Height = 21
         DataField = 'apelido_pessoa_fisica'
-        DataSource = DSpessoa
         TabOrder = 4
       end
       object DBEdit6: TDBEdit
@@ -146,7 +141,6 @@ object F_CADASTRO_PESSOA: TF_CADASTRO_PESSOA
         Width = 134
         Height = 21
         DataField = 'peso_pessoa_fisica'
-        DataSource = DSpessoa
         TabOrder = 5
       end
       object DBEdit7: TDBEdit
@@ -155,16 +149,14 @@ object F_CADASTRO_PESSOA: TF_CADASTRO_PESSOA
         Width = 134
         Height = 21
         DataField = 'altura_pessoa_fisica'
-        DataSource = DSpessoa
         TabOrder = 6
       end
       object DBEdit8: TDBEdit
         Left = 16
         Top = 105
         Width = 394
-        Height = 24
+        Height = 21
         DataField = 'profissao_pessoa_fisica'
-        DataSource = DSpessoa
         TabOrder = 7
       end
       object DBEdit9: TDBEdit
@@ -173,7 +165,6 @@ object F_CADASTRO_PESSOA: TF_CADASTRO_PESSOA
         Width = 134
         Height = 21
         DataField = 'data_nascimento_pessoa_fisica'
-        DataSource = DSpessoa
         TabOrder = 8
       end
     end
@@ -181,10 +172,5 @@ object F_CADASTRO_PESSOA: TF_CADASTRO_PESSOA
       Caption = 'Endere'#231'o'
       ImageIndex = 1
     end
-  end
-  object DSpessoa: TDataSource
-    DataSet = DM.Tbl_pessoa_fisica
-    Left = 712
-    Top = 24
   end
 end

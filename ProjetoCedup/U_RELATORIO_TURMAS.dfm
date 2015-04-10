@@ -1,6 +1,6 @@
 object F_RELATORIO_TURMAS: TF_RELATORIO_TURMAS
-  Left = 256
-  Top = 162
+  Left = 478
+  Top = 126
   Width = 741
   Height = 518
   Caption = 'F_RELATORIO_TURMAS'

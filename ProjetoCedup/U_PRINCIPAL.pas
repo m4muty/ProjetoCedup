@@ -26,6 +26,7 @@ type
     procedure Cursos1Click(Sender: TObject);
     procedure Materias1Click(Sender: TObject);
     procedure Boletins1Click(Sender: TObject);
+    procedure Desenv11Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -38,7 +39,7 @@ var
 implementation
 
 uses U_BOLETINS, U_CURSO, U_DM, U_GRADE, U_MATERIAS, U_RELATORIO_GRADE,
-  U_RELATORIO_TURMAS, U_TURMAS;
+  U_RELATORIO_TURMAS, U_TURMAS, U_CADASTRO_PESSOA;
 
 {$R *.dfm}
 
@@ -75,6 +76,11 @@ end;
 procedure TF_PRINCIPAL.Boletins1Click(Sender: TObject);
 begin
 F_BOLETINS.Show;
+end;
+
+procedure TF_PRINCIPAL.Desenv11Click(Sender: TObject);
+begin
+  F_CADASTRO_PESSOA.ShowModal;
 end;
 
 end.

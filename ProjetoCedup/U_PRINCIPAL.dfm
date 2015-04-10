@@ -1,6 +1,6 @@
 object F_PRINCIPAL: TF_PRINCIPAL
-  Left = 420
-  Top = 117
+  Left = 430
+  Top = 132
   Width = 522
   Height = 346
   Caption = 'F_PRINCIPAL'
@@ -19,6 +19,7 @@ object F_PRINCIPAL: TF_PRINCIPAL
     Top = 16
     object Desenv11: TMenuItem
       Caption = 'Desenv1'
+      OnClick = Desenv11Click
     end
     object Desenv21: TMenuItem
       Caption = 'Desenv2'

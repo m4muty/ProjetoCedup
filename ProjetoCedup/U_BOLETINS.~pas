@@ -21,15 +21,17 @@ type
     DBEdit_Semestres: TDBEdit;
     Button1: TButton;
     DBComboBox1: TDBComboBox;
-    DBComboBox2: TDBComboBox;
     CheckBox1: TCheckBox;
     CheckBox2: TCheckBox;
     CheckBox3: TCheckBox;
     CheckBox4: TCheckBox;
     Bevel1: TBevel;
     Label6: TLabel;
-    Button2: TButton;
+    Label7: TLabel;
     DBListBox1: TDBListBox;
+    Button2: TButton;
+    DBComboBox2: TDBComboBox;
+    DataSource2: TDataSource;
   private
     { Private declarations }
   public

@@ -14,37 +14,37 @@ object F_BOLETINS: TF_BOLETINS
   PixelsPerInch = 96
   TextHeight = 13
   object Bevel1: TBevel
-    Left = 568
-    Top = 32
+    Left = 688
+    Top = 48
     Width = 409
     Height = 393
   end
   object Label1: TLabel
-    Left = 184
-    Top = 88
+    Left = 256
+    Top = 80
     Width = 73
     Height = 13
     Caption = 'Nome do Aluno'
     FocusControl = DBEdit_NomeAluno
   end
   object Label2: TLabel
-    Left = 184
-    Top = 128
-    Width = 35
+    Left = 40
+    Top = 48
+    Width = 40
     Height = 13
-    Caption = 'Materia'
+    Caption = 'Materias'
     FocusControl = DBEdit_NomeMateria
   end
   object Label3: TLabel
-    Left = 184
-    Top = 168
+    Left = 256
+    Top = 176
     Width = 29
     Height = 13
     Caption = 'M'#233'dia'
     FocusControl = DBEdit_Media
   end
   object Label4: TLabel
-    Left = 184
+    Left = 472
     Top = 208
     Width = 28
     Height = 13
@@ -52,7 +52,7 @@ object F_BOLETINS: TF_BOLETINS
     FocusControl = DBEdit_Materias
   end
   object Label5: TLabel
-    Left = 184
+    Left = 472
     Top = 248
     Width = 44
     Height = 13
@@ -60,11 +60,24 @@ object F_BOLETINS: TF_BOLETINS
     FocusControl = DBEdit_Semestres
   end
   object Label6: TLabel
-    Left = 200
-    Top = 56
-    Width = 97
-    Height = 13
+    Left = 240
+    Top = 40
+    Width = 193
+    Height = 24
     Caption = 'Cadastro de Boletins'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label7: TLabel
+    Left = 256
+    Top = 128
+    Width = 35
+    Height = 13
+    Caption = 'Materia'
   end
   object DBEdit_NomeAluno: TDBEdit
     Left = 688
@@ -76,8 +89,8 @@ object F_BOLETINS: TF_BOLETINS
     TabOrder = 0
   end
   object DBEdit_NomeMateria: TDBEdit
-    Left = 696
-    Top = 120
+    Left = 256
+    Top = 144
     Width = 134
     Height = 21
     DataField = 'codigo_materia'
@@ -94,8 +107,8 @@ object F_BOLETINS: TF_BOLETINS
     TabOrder = 4
   end
   object DBEdit_Media: TDBEdit
-    Left = 184
-    Top = 184
+    Left = 256
+    Top = 192
     Width = 134
     Height = 21
     DataField = 'media_boletim'
@@ -103,7 +116,7 @@ object F_BOLETINS: TF_BOLETINS
     TabOrder = 2
   end
   object DBEdit_Materias: TDBEdit
-    Left = 184
+    Left = 472
     Top = 224
     Width = 134
     Height = 21
@@ -112,7 +125,7 @@ object F_BOLETINS: TF_BOLETINS
     TabOrder = 3
   end
   object Button1: TButton
-    Left = 200
+    Left = 488
     Top = 336
     Width = 113
     Height = 41
@@ -120,8 +133,8 @@ object F_BOLETINS: TF_BOLETINS
     TabOrder = 5
   end
   object DBComboBox1: TDBComboBox
-    Left = 184
-    Top = 104
+    Left = 256
+    Top = 96
     Width = 145
     Height = 21
     DataField = 'codigo_aluno'
@@ -129,67 +142,72 @@ object F_BOLETINS: TF_BOLETINS
     ItemHeight = 13
     TabOrder = 6
   end
-  object DBComboBox2: TDBComboBox
-    Left = 184
-    Top = 144
-    Width = 145
-    Height = 21
-    DataField = 'codigo_materia'
-    DataSource = DataSource1
-    ItemHeight = 13
-    TabOrder = 7
-  end
   object CheckBox1: TCheckBox
-    Left = 184
+    Left = 472
     Top = 272
     Width = 97
     Height = 17
     Caption = '1'#186' Semestre'
-    TabOrder = 8
+    TabOrder = 7
   end
   object CheckBox2: TCheckBox
-    Left = 184
+    Left = 472
     Top = 296
     Width = 97
     Height = 17
     Caption = '2'#186' Semestre'
-    TabOrder = 9
+    TabOrder = 8
   end
   object CheckBox3: TCheckBox
-    Left = 288
+    Left = 576
     Top = 272
     Width = 97
     Height = 17
     Caption = '3'#186' Semestre'
-    TabOrder = 10
+    TabOrder = 9
   end
   object CheckBox4: TCheckBox
-    Left = 288
+    Left = 576
     Top = 296
     Width = 97
     Height = 17
     Caption = '4'#186' Semestre'
+    TabOrder = 10
+  end
+  object DBListBox1: TDBListBox
+    Left = 40
+    Top = 64
+    Width = 121
+    Height = 153
+    DataSource = DataSource2
+    ItemHeight = 13
     TabOrder = 11
   end
   object Button2: TButton
-    Left = 640
-    Top = 168
-    Width = 75
+    Left = 400
+    Top = 192
+    Width = 33
     Height = 25
-    Caption = 'Button2'
+    Caption = '+'
     TabOrder = 12
   end
-  object DBListBox1: TDBListBox
-    Left = 24
-    Top = 40
-    Width = 121
-    Height = 297
+  object DBComboBox2: TDBComboBox
+    Left = 520
+    Top = 24
+    Width = 145
+    Height = 21
+    DataField = 'descricao_materia'
+    DataSource = DataSource2
     ItemHeight = 13
     TabOrder = 13
   end
   object DataSource1: TDataSource
     DataSet = DM.Tbl_boletim
-    Left = 712
-    Top = 40
+    Left = 8
+  end
+  object DataSource2: TDataSource
+    DataSet = DM.Tbl_materias
+    Left = 1144
+    Top = 24
   end
 end
