@@ -28,12 +28,6 @@ type
     Tbl_professorescodigo_pessoa_fisica: TIntegerField;
     Tbl_professoresficha_limpa_professor: TSmallintField;
     Tbl_professoresdata_cadastro_professor: TDateTimeField;
-    Tbl_grade_horacodigo_materia: TIntegerField;
-    Tbl_grade_horacodigo_turma: TIntegerField;
-    Tbl_grade_horahorario_inicio_grade_hora: TStringField;
-    Tbl_grade_horahorario_fim_grade_hora: TStringField;
-    Tbl_grade_horadia_semana_grade_hora: TStringField;
-    Tbl_grade_horacodigo_professor_grade_hora: TIntegerField;
     Tbl_cursoscodigo_curso: TAutoIncField;
     Tbl_cursosnome_curso: TStringField;
     Tbl_bancoscodigo_banco: TAutoIncField;
@@ -126,6 +120,12 @@ type
     Tbl_materiasdescricao_materia: TStringField;
     Tbl_materiascarga_horaria_materia: TIntegerField;
     Tbl_materiassemestre_materia: TStringField;
+    Tbl_grade_horacodigo_grade_hora: TAutoIncField;
+    Tbl_grade_horacodigo_materia: TIntegerField;
+    Tbl_grade_horacodigo_turma: TIntegerField;
+    Tbl_grade_horasequencia_aula_grade_hora: TIntegerField;
+    Tbl_grade_horadia_semana_grade_hora: TStringField;
+    Tbl_grade_horacodigo_professor: TIntegerField;
   private
     { Private declarations }
   public

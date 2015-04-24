@@ -69,10 +69,6 @@ type
     Tbl_enderecosfax_endereco: TIntegerField;
     Tbl_enderecosramal_fax_endereco: TStringField;
     Tbl_enderecosdata_cadastro_endereco: TDateTimeField;
-    Tbl_materiascodigo_materia: TAutoIncField;
-    Tbl_materiasdescricao_materia: TStringField;
-    Tbl_materiascarga_horaria_materia: TIntegerField;
-    Tbl_materiassemestre_materia: TStringField;
     Tbl_pessoa_fisicacodigo_pessoa_fisica: TAutoIncField;
     Tbl_pessoa_fisicanome_pessoa_fisica: TStringField;
     Tbl_pessoa_fisicarg_pessoa_fisica: TStringField;
@@ -126,6 +122,10 @@ type
     Tbl_turnosdescricao_turno: TStringField;
     Tbl_Alunos: TADOTable;
     Tbl_boletim: TADOTable;
+    Tbl_materiascodigo_materia: TAutoIncField;
+    Tbl_materiasdescricao_materia: TStringField;
+    Tbl_materiascarga_horaria_materia: TIntegerField;
+    Tbl_materiassemestre_materia: TStringField;
   private
     { Private declarations }
   public

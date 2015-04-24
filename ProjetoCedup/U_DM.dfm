@@ -1,7 +1,7 @@
 object DM: TDM
   OldCreateOrder = False
-  Left = 843
-  Top = 312
+  Left = 668
+  Top = 258
   Height = 446
   Width = 609
   object Conect_SQL: TADOConnection
@@ -215,29 +215,29 @@ object DM: TDM
     TableName = 'grade_hora'
     Left = 56
     Top = 248
+    object Tbl_grade_horacodigo_grade_hora: TAutoIncField
+      FieldName = 'codigo_grade_hora'
+      ReadOnly = True
+    end
     object Tbl_grade_horacodigo_materia: TIntegerField
       FieldName = 'codigo_materia'
     end
     object Tbl_grade_horacodigo_turma: TIntegerField
       FieldName = 'codigo_turma'
     end
-    object Tbl_grade_horahorario_inicio_grade_hora: TStringField
-      FieldName = 'horario_inicio_grade_hora'
-      Size = 30
-    end
-    object Tbl_grade_horahorario_fim_grade_hora: TStringField
-      FieldName = 'horario_fim_grade_hora'
-      Size = 30
+    object Tbl_grade_horasequencia_aula_grade_hora: TIntegerField
+      FieldName = 'sequencia_aula_grade_hora'
     end
     object Tbl_grade_horadia_semana_grade_hora: TStringField
       FieldName = 'dia_semana_grade_hora'
       Size = 30
     end
-    object Tbl_grade_horacodigo_professor_grade_hora: TIntegerField
-      FieldName = 'codigo_professor_grade_hora'
+    object Tbl_grade_horacodigo_professor: TIntegerField
+      FieldName = 'codigo_professor'
     end
   end
   object Tbl_materias: TADOTable
+    Active = True
     Connection = Conect_SQL
     CursorType = ctStatic
     TableName = 'materias'
